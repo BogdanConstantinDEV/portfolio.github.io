@@ -4,11 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
     <title>Bogdan Constantin DEV</title>
 </head>
 <body>
-    
+
+    <!-- Header -->
+
+    <header>
+        <div class="logo">
+            <h3>Bogdan Constantin DEV</h3>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="burger"></span>
+        </button>
+        <nav> 
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">My Services</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#work">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+
+    <section id="home" class="intro">
+        <h1 class="section-title section-title-intro">Hi, I am <strong>Bogdan</strong></h1>
+        <p class="section-subtitle section-subtitle-intro">front end dev</p>
+        <img src="./img/intro-pic.jpg" alt="" class="intro-img">
+    </section>
+
+    <!-- My services -->
+
+    <section class="my-services" id="services">
+        <h2 class="section-title section-subtitle-services">What I do</h2>
+        <div class="services">
+
+            <div class="service">
+                <h3>Design + Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="service">
+                <h3>E-Commerce</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="service">
+                <h3>WordPress</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+        </div>
+        <a href="#work" class="btn">my work</a>   
+    </section>
+
+    <!-- About me -->
+
+    <section class="about-me" id="about">
+        <h2 class="section-title">Who I am</h2>
+        <p class="section-subtitle section-subtitle-about">Designer & developer based out of Craiova</p>
+        <div class="about-me-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <img src="./img/dev-jane-02.jpg" alt="" class="about-me-img">
+    </section>
+
+    <!-- My work -->
+
+    <section class="my-work" id="work">
+        <h2 class="section-title section-title-work">My work</h2>
+        <p class="section-subtitle section-subtitle-work">A selection of my range of work</p>
+        <div class="portfolio">
+            <!-- Portfolio item 01 -->
+            <a href="./projects/project-1.html" class="portfolio-item">
+                <img src="./img/portfolio-01.jpg" alt="" class="portfolio-img">
+            </a>
+            <!-- Portfolio item 02 -->
+            <a href="#" class="portfolio-item">
+                <img src="./img/portfolio-02.jpg" alt="" class="portfolio-img">
+            </a>
+            <!-- Portfolio item 03 -->
+            <a href="#" class="portfolio-item">
+                <img src="./img/portfolio-03.jpg" alt="" class="portfolio-img">
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <a href="bogdan_porojan@yahoo.com" class="email-footer-link">bogdan_porojan@yahoo.com</a>
+        <ul>
+            <li><a href="https://github.com/BogdanConstantinDEV"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/porojan-bogdan-constantin-238850137/"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/bogdanconstantin92/?hl=ro"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </footer>
 </body>
 </html>
