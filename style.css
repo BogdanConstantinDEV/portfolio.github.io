@@ -321,9 +321,26 @@ nav a:hover {
     margin-bottom: 4em;
 }
 .service {
-    max-width: 500%;
     margin: 0 auto;
+    opacity: 0;
 }
+.fa-html5, .fa-css3, .fa-js-square {
+    font-size: 200px;
+}
+.fa-html5{
+    color: #CE5936;
+}
+.fa-css3 {
+    color: #2299F8;
+}
+.fa-js-square {
+    color: #F0DB4F;
+}
+@keyframes appear-services {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 @media (min-width: 800px) {
     .services {
         display: flex;
