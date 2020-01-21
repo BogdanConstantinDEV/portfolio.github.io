@@ -47,13 +47,13 @@ introObserver.observe(introImg)
 
 // what i use animation
 
-const serviceOptions = {rootMargin: '0px 0px -200px 0px', threshold: 1}
+const serviceOptions = {rootMargin: '0px 0px -100px 0px'}
 const serviceObserver = new IntersectionObserver ((entries, serviceObserver) =>{
     entries.forEach(entry => {
         if(!entry.isIntersecting) {
             return
         } else {
-            entry.target.style.animation = `appear-services 400ms ${entry.target.dataset.delay} forwards linear`
+            entry.target.style.animation = `appear-services 300ms ${entry.target.dataset.delay} forwards linear`
         }
         serviceObserver.unobserve(entry.target)
     })
