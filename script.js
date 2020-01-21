@@ -32,7 +32,7 @@ const introObserver = new IntersectionObserver((entries, introObserver) => {
         if(!entry.isIntersecting) {
             return
         } else {
-            entry.target.style.animation = `${entry.target.dataset.name} 1000ms linear forwards`
+            entry.target.style.animation = `${entry.target.dataset.name} ${entry.target.dataset.speed} linear forwards`
         }
         introObserver.unobserve(entry.target)
     })
@@ -47,13 +47,13 @@ introObserver.observe(introImg)
 
 // what i use animation
 
-const serviceOptions = {rootMargin: '0px 0px -150px 0px', threshold: 1}
+const serviceOptions = {rootMargin: '0px 0px -200px 0px', threshold: 1}
 const serviceObserver = new IntersectionObserver ((entries, serviceObserver) =>{
     entries.forEach(entry => {
         if(!entry.isIntersecting) {
             return
         } else {
-            entry.target.style.animation = `appear-services 500ms ${entry.target.dataset.delay} forwards linear`
+            entry.target.style.animation = `appear-services 400ms ${entry.target.dataset.delay} forwards linear`
         }
         serviceObserver.unobserve(entry.target)
     })
